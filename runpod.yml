@@ -3,7 +3,25 @@ configs:
     required: true
 
 tests:
-  - name: basic-image-test
+  - name: basic-imagen-test
     input:
-      prompt: "A cute cat wearing sunglasses"
-    timeout: 60
+      prompt: "A cute cat wearing sunglasses, digital art, high quality"
+      model: "imagen-3"
+      sample_count: 2
+      aspect_ratio: "1:1"
+    timeout: 120
+  
+  - name: portrait-test
+    input:
+      prompt: "Professional portrait of a woman in business attire"
+      model: "imagen-3"
+      sample_count: 1
+      aspect_ratio: "3:4"
+      negative_prompt: "blurry, low quality, distorted"
+    timeout: 90
+  
+  - name: landscape-test
+    input:
+      prompt: "Beautiful sunset over mountains, wide angle photography"
+      aspect_ratio: "16:9"
+    timeout: 90
