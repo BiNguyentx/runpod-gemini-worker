@@ -1,0 +1,11 @@
+{
+  "title": "RunPod Gemini Worker",
+  "description": "Generate images using Google Gemini from RunPod",
+  "tags": ["serverless", "image"],
+  "category": "image",
+  "configuration": {
+    "runtime": "python3.10",
+    "gpu": false,
+    "containerDiskGB": 2
+  }
+}
