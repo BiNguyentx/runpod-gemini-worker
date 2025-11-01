@@ -1,2 +1,9 @@
-entrypoints:
-  - python handler.py
+configs:
+  - name: GEMINI_API_KEY
+    required: true
+
+tests:
+  - name: basic-image-test
+    input:
+      prompt: "A cute cat wearing sunglasses"
+    timeout: 60
