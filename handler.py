@@ -55,9 +55,10 @@ def generate_image(prompt, model="imagen-3", sample_count=1, aspect_ratio="1:1",
         }
     }
     
-    # Add negative prompt if provided
+    # NOTE: negativePrompt is NO LONGER SUPPORTED by Google
+    # We keep the parameter for backward compatibility but don't send it
     if negative_prompt:
-        payload["parameters"]["negativePrompt"] = negative_prompt
+        print(f"Warning: negative_prompt ignored (not supported by API)")
     
     try:
         print(f"Calling Imagen API...")
