@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "name": "generate_image_test",
+      "input": {
+        "prompt": "a cute cat with astronaut helmet, high detail"
+      },
+      "timeout": 60
+    }
+  ]
+}
